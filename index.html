@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Medidas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header class="main-header">
         <h1>Conversor de Medidas</h1>
         <p>Acesse os conversores abaixo para converter rapidamente Comprimento, Massa, Temperatura e Velocidade</p>
     </header>
-
     <section class="main">
         <article class="article-type">
             <h3>Comprimento</h3>
@@ -35,7 +31,6 @@
                     <option value="po">Polegada</option>
                     <option value="mn">Milha náutica</option>
                 </select></label>
-
             <label>
                 <input readonly type="number" placeholder="Para" id="comprimentoValor">
                 <select name="calc" id="selectComprimento2">
@@ -52,6 +47,7 @@
             <button id="comprimentoCalcular">Calcular</button><button id="comprimentoLimpar">Limpar</button>
         </article>
         <article class="article-type">
+
             <h3>Massa</h3>
             <label>
                 <input min="0" type="number" placeholder="Quero converter" id="massa">
@@ -85,7 +81,6 @@
                     <option value="graf">Grau Fahrenheit</option>
                     <option value="kel">Kelvin</option>
                 </select></label>
-
             <label>
                 <input readonly type="number" placeholder="Para" id="temperaturaValor">
                 <select name="calc" id="selecttemperatura2">
@@ -95,6 +90,7 @@
                 </select></label>
             <button id="temperaturaCalcular">Calcular</button><button id="temperaturaLimpar">Limpar</button>
         </article>
+
         <article class="article-type">
             <h3>Velocidade</h3>
             <label>
@@ -105,7 +101,6 @@
                     <option value="qh">Quilometro por hora</option>
                     <option value="no">Nó</option>
                 </select></label>
-
             <label>
                 <input readonly type="number" placeholder="Para" id="velocidadeValor">
                 <select name="calc" id="selectvelocidade2">
@@ -117,16 +112,14 @@
             <button id="velocidadeCalcular">Calcular</button><button id="velocidadeLimpar">Limpar</button>
         </article>
     </section>
-    <footer>
+    <footer class="footer">
         <p>Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206">Kauan
                 Lima</a></p>
     </footer>
-
     <script src="js/comprimento.js"></script>
     <script src="js/massa.js"></script>
     <script src="js/temperatura.js"></script>
     <script src="js/velocidade.js"></script>
-
 </body>
 
 </html>
