@@ -1,0 +1,90 @@
+body {
+    background: rgb(78,49,170);
+    background: linear-gradient(90deg, rgba(78,49,170,1) 0%, rgba(47,88,205,1) 50%, rgba(55,149,189,1) 100%);
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    color: white;
+}
+a:active {
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+input:focus,
+select:focus {
+    outline: 0;
+}
+.main-header {
+    width: 95%;
+    margin: .5em auto;
+}
+.main {
+    width: 95%;
+    margin: 0 auto;
+}
+.article-type {
+    border: 2px solid white;
+    padding: 2em 0;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    display: block;
+    box-sizing: border-box;
+    background: rgb(47,88,205);
+    background: linear-gradient(90deg, rgba(47,88,205,1) 51%, rgba(55,149,189,1) 100%);
+}
+.article-type input[type=number] {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+button{
+    background: rgb(47,88,205);
+    background: linear-gradient(90deg, rgba(47,88,205,1) 51%, rgba(55,149,189,1) 100%);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 37.5%;
+    margin: 0 auto;
+}
+
+.article-type select{
+    background-color: #2f58cd;
+    color: white;
+    border: 1px solid white;
+}
+select:hover {
+    background-color: rgb(47, 88, 205);
+    color: white;
+  }
+  
+input{
+    border: 1px solid white;
+}
+
+select[name="calc"] {
+    display: block;
+    width: 75%;
+    margin: 0 auto 1em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+@media screen and (min-width: 35.5em) {
+    .main {
+        overflow: hidden;
+    }
+    .article-type {
+        float: left;
+        width: 46%;
+        margin: 1em 2%;
+    }
+}
