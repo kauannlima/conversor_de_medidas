@@ -12,10 +12,25 @@ input:focus,
 select:focus {
     outline: 0;
 }
+a{
+    text-decoration: none;
+    color: white; 
+}
 a:visited {
     color: white;
   }
- 
+  ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline;
+    margin-right: 2%;
+    font-weight: bold;
+  }
+  
 .main-header {
     width: 95%;
     margin: .9em auto;
