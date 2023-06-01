@@ -3,10 +3,14 @@ let massaValor = document.querySelector("#massaValor");
 let selectmassa1 = document.querySelector("#selectmassa1");
 let selectmassa2 = document.querySelector("#selectmassa2");
 let valorMassa;
-const calcularMassa = document.querySelector("#massaCalcular");
 const limparMassa = document.querySelector("#massaLimpar");
 
-calcularMassa.addEventListener("click", calculoMass);
+selectmassa1.addEventListener("change", calculoMass);
+selectmassa2.addEventListener("change", calculoMass);
+massa.addEventListener("change", calculoMass);
+massa.addEventListener("keyup", calculoMass);
+window.addEventListener("load", calculoMass);
+
 limparMassa.addEventListener("click", function () {
   massa.value = ""
   massaValor.value = ""

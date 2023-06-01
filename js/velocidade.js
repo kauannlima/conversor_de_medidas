@@ -3,10 +3,14 @@ let velocidadeValor = document.querySelector("#velocidadeValor")
 let selectvelocidade1 = document.querySelector("#selectvelocidade1");
 let selectvelocidade2 = document.querySelector("#selectvelocidade2");
 let valorvelocidade;
-const calcularVelocidade = document.querySelector("#velocidadeCalcular");
 const limparVelocidade = document.querySelector("#velocidadeLimpar");
 
-calcularVelocidade.addEventListener("click", calculoMass);
+selectvelocidade1.addEventListener("change", calculoMass);
+selectvelocidade2.addEventListener("change", calculoMass);
+velocidade.addEventListener("change", calculoMass);
+velocidade.addEventListener("keyup", calculoMass);
+window.addEventListener("load", calculoMass);
+
 limparVelocidade.addEventListener("click", function () {
     velocidade.value = ""
     velocidadeValor.value = ""

@@ -3,10 +3,15 @@ let comprimentoValor = document.querySelector("#comprimentoValor");
 let selectComprimento1 = document.querySelector("#selectComprimento1");
 let selectComprimento2 = document.querySelector("#selectComprimento2");
 let valorComprimento;
-const calcularComprimento = document.querySelector("#comprimentoCalcular");
 const limparComprimento = document.querySelector("#comprimentoLimpar");
 
-calcularComprimento.addEventListener("click", calculoCompri);
+selectComprimento1.addEventListener("change", calculoCompri);
+selectComprimento2.addEventListener("change", calculoCompri);
+comprimento.addEventListener("change", calculoCompri);
+comprimento.addEventListener("keyup", calculoCompri);
+window.addEventListener("load", calculoCompri);
+
+
 limparComprimento.addEventListener("click", function () {
   comprimento.value = ""
   comprimentoValor.value = ""

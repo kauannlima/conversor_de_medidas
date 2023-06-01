@@ -3,16 +3,21 @@ let temperaturaValor = document.querySelector("#temperaturaValor")
 let selecttemperatura1 = document.querySelector("#selecttemperatura1");
 let selecttemperatura2 = document.querySelector("#selecttemperatura2");
 let valortemperatura;
-const calcularTemperatura = document.querySelector("#temperaturaCalcular");
+
 const limparTemperatura = document.querySelector("#temperaturaLimpar");
 
-calcularTemperatura.addEventListener("click", calculoMass);
+selecttemperatura1.addEventListener("change", calculoTemp);
+selecttemperatura2.addEventListener("change", calculoTemp);
+temperatura.addEventListener("change", calculoTemp);
+temperatura.addEventListener("keyup", calculoTemp);
+window.addEventListener("load", calculoTemp);
+
 limparTemperatura.addEventListener("click", function () {
     temperatura.value = ""
     temperaturaValor.value = ""
 });
 
-function calculoMass() {
+function calculoTemp() {
   switch (selecttemperatura1.value) {
     case "grac":
       switch (selecttemperatura2.value) {
