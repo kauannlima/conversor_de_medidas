@@ -10,11 +10,10 @@ selecttempo2.addEventListener("change", calculoTempo);
 tempo.addEventListener("keyup", calculoTempo);
 window.addEventListener("load", calculoTempo);
 
-limparTempo.addEventListener("click", function () {
-    tempo.value = ""
-    tempoResultado.value = ""
-});
 
+limparTempo.addEventListener("click", function(){
+    clear(tempo, tempoResultado);
+} )
 function calculoTempo() {
     switch (selecttempo1.value) {
         case "miliseg":
