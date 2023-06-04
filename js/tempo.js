@@ -38,11 +38,11 @@ function calculoTempo() {
                     valortempo = tempo.value / 8.64e+7
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
-                case "mes":/*SE VALOR FOR MILISEGUNDO PARA JARDAS*/
+                case "mes":/*SE VALOR FOR MILISEGUNDO PARA MES*/
                     valortempo = tempo.value / 2.628e+9
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
-                case "ano":/*SE VALOR FOR MILISEGUNDO PARA PE*/
+                case "ano":/*SE VALOR FOR MILISEGUNDO PARA ANO*/
                     valortempo = tempo.value / 3.154e+10
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
@@ -77,11 +77,11 @@ function calculoTempo() {
                     valortempo = tempo.value / 86400
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
-                case "mes":/*SE VALOR FOR SEGUNDO PARA JARDAS*/
+                case "mes":/*SE VALOR FOR SEGUNDO PARA MES*/
                     valortempo = tempo.value / 604800
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
-                case "ano":/*SE VALOR FOR SEGUNDO PARA PE*/
+                case "ano":/*SE VALOR FOR SEGUNDO PARA ANO*/
                     valortempo = tempo.value / 3.154e+7
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
@@ -116,50 +116,50 @@ function calculoTempo() {
                     valortempo = tempo.value / 1440
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "mes":/*SE VALOR FOR MINUTO PARA JARDAS*/
+                case "mes":/*SE VALOR FOR MINUTO PARA MES*/
                     valortempo = tempo.value / 43800
                     tempoResultado.value = valortempo.toExponential(3);
                     break;
-                case "ano":/*SE VALOR FOR MINUTO PARA PE*/
-                valortempo = tempo.value / 525600
-                tempoResultado.value = valortempo.toExponential(4);
+                case "ano":/*SE VALOR FOR MINUTO PARA ANO*/
+                    valortempo = tempo.value / 525600
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
                 case "dec":/*SE VALOR FOR MINUTO PARA POLEGADA*/
-                valortempo = tempo.value / 5.256e+6
-                tempoResultado.value = valortempo.toExponential(4);
+                    valortempo = tempo.value / 5.256e+6
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
                 case "sec":/*SE VALOR FOR MINUTO PARA DIAS NAUTICAS*/
-                valortempo = tempo.value / 5.256e+7
-                tempoResultado.value = valortempo.toExponential(4);
+                    valortempo = tempo.value / 5.256e+7
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
             }
             break;
         case "hr":
             switch (selecttempo2.value) {
                 case "miliseg":/*SE VALOR FOR HORA PARA MILISEGUNDO*/
-                    valortempo = tempo.value *3.6e+6
+                    valortempo = tempo.value * 3.6e+6
                     tempoResultado.value = valortempo.toExponential(4);
                     break;
                 case "seg":/*SE VALOR FOR HORA PARA SEGUNDO*/
-                    valortempo = tempo.value *3600
+                    valortempo = tempo.value * 3600
                     tempoResultado.value = valortempo.toString();
                     break;
                 case "min":/*SE VALOR FOR HORA PARA MINUTO*/
-                    valortempo = tempo.value *60
+                    valortempo = tempo.value * 60
                     tempoResultado.value = valortempo.toString();
                     break;
                 case "hr":/*SE VALOR FOR HORA PARA HORA*/
                     tempoResultado.value = tempo.value.toString();
                     break;
                 case "day":/*SE VALOR FOR HORA PARA DIA*/
-                    valortempo = tempo.value /24
+                    valortempo = tempo.value / 24
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "mes":/*SE VALOR FOR HORA PARA JARDAS*/
+                case "mes":/*SE VALOR FOR HORA PARA MES*/
                     valortempo = tempo.value / 730
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "ano":/*SE VALOR FOR HORA PARA PE*/
+                case "ano":/*SE VALOR FOR HORA PARA ANO*/
                     valortempo = tempo.value / 8760
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
@@ -168,8 +168,8 @@ function calculoTempo() {
                     tempoResultado.value = valortempo.toExponential(4);
                     break;
                 case "sec":/*SE VALOR FOR HORA PARA DIAS NAUTICAS*/
-                valortempo = tempo.value / 876000
-                tempoResultado.value = valortempo.toExponential(4);
+                    valortempo = tempo.value / 876000
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
             }
             break;
@@ -194,177 +194,177 @@ function calculoTempo() {
                 case "day":/*SE VALOR FOR DIA PARA DIA*/
                     tempoResultado.value = tempo.value.toString();
                     break;
-                case "mes":/*SE VALOR FOR DIA PARA JARDAS*/
+                case "mes":/*SE VALOR FOR DIA PARA MES*/
                     valortempo = tempo.value / 30.417
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "ano":/*SE VALOR FOR DIA PARA PE*/
-                    valortempo = tempo.value /365
+                case "ano":/*SE VALOR FOR DIA PARA ANO*/
+                    valortempo = tempo.value / 365
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
                 case "dec":/*SE VALOR FOR DIA PARA POLEGADA*/
-                valortempo = tempo.value /3650
-                tempoResultado.value = valortempo.toFixed(6).toString();
+                    valortempo = tempo.value / 3650
+                    tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
                 case "sec":/*SE VALOR FOR DIA PARA DIAS NAUTICAS*/
-                valortempo = tempo.value /36500
-                tempoResultado.value = valortempo.toExponential(4);
+                    valortempo = tempo.value / 36500
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
             }
             break;
         case "mes":
             switch (selecttempo2.value) {
-                case "miliseg":/*SE VALOR FOR JARDAS PARA MILISEGUNDO*/
-                    valortempo = tempo.value / 1094
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "miliseg":/*SE VALOR FOR MES PARA MILISEGUNDO*/
+                    valortempo = tempo.value * 2.628e+9
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "seg":/*SE VALOR FOR JARDAS PARA SEGUNDO*/
-                    valortempo = tempo.value / 1.094
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "seg":/*SE VALOR FOR MES PARA SEGUNDO*/
+                    valortempo = tempo.value * 2.628e+6
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "min":/*SE VALOR FOR JARDAS PARA MINUTO*/
-                    valortempo = tempo.value * 91.44
+                case "min":/*SE VALOR FOR MES PARA MINUTO*/
+                    valortempo = tempo.value * 43800
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "hr":/*SE VALOR FOR JARDAS PARA HORA*/
-                    valortempo = tempo.value * 914.4
-                    tempoResultado.value = valortempo.toString();
+                case "hr":/*SE VALOR FOR MES PARA HORA*/
+                    valortempo = tempo.value * 730.001
+                    tempoResultado.value = valortempo.toFixed(3).toString();
                     break;
-                case "day":/*SE VALOR FOR JARDAS PARA DIA*/
-                    valortempo = tempo.value / 1760
+                case "day":/*SE VALOR FOR MES PARA DIA*/
+                    valortempo = tempo.value * 30.417
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "mes":/*SE VALOR FOR JARDAS PARA JARDAS*/
+                case "mes":/*SE VALOR FOR MES PARA MES*/
                     tempoResultado.value = tempo.value.toString();
                     break;
-                case "ano":/*SE VALOR FOR JARDAS PARA PE*/
-                    valortempo = tempo.value * 3
-                    tempoResultado.value = valortempo.toString();
+                case "ano":/*SE VALOR FOR MES PARA ANO*/
+                    valortempo = tempo.value / 12
+                    tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "dec":/*SE VALOR FOR JARDAS PARA POLEGADA*/
-                    valortempo = tempo.value * 36
-                    tempoResultado.value = valortempo.toString()
+                case "dec":/*SE VALOR FOR MES PARA POLEGADA*/
+                    valortempo = tempo.value / 120
+                    tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
-                case "sec":/*SE VALOR FOR JARDAS PARA DIAS NAUTICAS*/
-                    valortempo = tempo.value / 2025
+                case "sec":/*SE VALOR FOR MES PARA DIAS NAUTICAS*/
+                    valortempo = tempo.value / 1200
                     tempoResultado.value = valortempo.toFixed(6).toString();
                     break;
             }
             break;
         case "ano":
             switch (selecttempo2.value) {
-                case "miliseg":/*SE VALOR FOR PE PARA MILISEGUNDO*/
-                    valortempo = tempo.value / 3281
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "miliseg":/*SE VALOR FOR ANO PARA MILISEGUNDO*/
+                    valortempo = tempo.value * 3.154e+10
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "seg":/*SE VALOR FOR PE PARA SEGUNDO*/
-                    valortempo = tempo.value / 3.281
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "seg":/*SE VALOR FOR ANO PARA SEGUNDO*/
+                    valortempo = tempo.value * 3.154e+7
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "min":/*SE VALOR FOR PE PARA MINUTO*/
-                    valortempo = tempo.value * 30.48
+                case "min":/*SE VALOR FOR ANO PARA MINUTO*/
+                    valortempo = tempo.value * 525600
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "hr":/*SE VALOR FOR PE PARA HORA*/
-                    valortempo = tempo.value * 304.8
+                case "hr":/*SE VALOR FOR ANO PARA HORA*/
+                    valortempo = tempo.value * 8760
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "day":/*SE VALOR FOR PE PARA DIA*/
-                    valortempo = tempo.value / 5280
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "day":/*SE VALOR FOR ANO PARA DIA*/
+                    valortempo = tempo.value * 365
+                    tempoResultado.value = valortempo.toString();
                     break;
-                case "mes":/*SE VALOR FOR PE PARA JARDAS*/
-                    valortempo = tempo.value / 3
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "mes":/*SE VALOR FOR ANO PARA MES*/
+                    valortempo = tempo.value * 12
+                    tempoResultado.value = valortempo.toString();
                     break;
-                case "ano":/*SE VALOR FOR PE PARA PE*/
+                case "ano":/*SE VALOR FOR ANO PARA ANO*/
                     tempoResultado.value = tempo.value.toString();
                     break;
-                case "dec":/*SE VALOR FOR PE PARA POLEGADA*/
-                    valortempo = tempo.value * 12
+                case "dec":/*SE VALOR FOR ANO PARA DECADA*/
+                    valortempo = tempo.value / 10
                     tempoResultado.value = valortempo.toString()
                     break;
-                case "sec":/*SE VALOR FOR PE PARA DIAS NAUTICAS*/
-                    valortempo = tempo.value / 6076
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "sec":/*SE VALOR FOR ANO PARA DIAS SECULO*/
+                    valortempo = tempo.value / 100
+                    tempoResultado.value = valortempo.toString();
                     break;
             }
             break;
         case "dec":
             switch (selecttempo2.value) {
-                case "miliseg":/*SE VALOR FOR PO PARA MILISEGUNDO*/
-                    valortempo = tempo.value / 39370
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "miliseg":/*SE VALOR FOR DECADA PARA MILISEGUNDO*/
+                    valortempo = tempo.value * 3.154e+11
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "seg":/*SE VALOR FOR PO PARA SEGUNDO*/
-                    valortempo = tempo.value / 39.37
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "seg":/*SE VALOR FOR DECADA PARA SEGUNDO*/
+                    valortempo = tempo.value * 3.154e+8
+                    tempoResultado.value = valortempo.toExponential(4);
                     break;
-                case "min":/*SE VALOR FOR PO PARA MINUTO*/
-                    valortempo = tempo.value * 2.54
+                case "min":/*SE VALOR FOR DECADA PARA MINUTO*/
+                    valortempo = tempo.value * 5.256e+6
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "hr":/*SE VALOR FOR PO PARA HORA*/
-                    valortempo = tempo.value * 25.4
+                case "hr":/*SE VALOR FOR DECADA PARA HORA*/
+                    valortempo = tempo.value * 87600
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "day":/*SE VALOR FOR PO PARA DIA*/
-                    valortempo = tempo.value / 63360
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "day":/*SE VALOR FOR DECADA PARA DIA*/
+                    valortempo = tempo.value * 3650
+                    tempoResultado.value = valortempo.toString();
                     break;
-                case "mes":/*SE VALOR FOR PO PARA JARDAS*/
-                    valortempo = tempo.value / 36
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "mes":/*SE VALOR FOR DECADA PARA MES*/
+                    valortempo = tempo.value * 120
+                    tempoResultado.value = valortempo.toString();
                     break;
-                case "ano":/*SE VALOR FOR PO PARA PE*/
-                    valortempo = tempo.value / 12
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "ano":/*SE VALOR FOR DECADA PARA DECADA*/
+                    valortempo = tempo.value * 10
+                    tempoResultado.value = valortempo.toString()
                     break;
-                case "dec":/*SE VALOR FOR PO PARA POLEGADA*/
-                    tempoResultado.value = tempo.value.toString()
+                case "dec":/*SE VALOR FOR DECADA PARA DECADA*/
+                    tempoResultado.value = tempo.value.toString();
                     break;
-                case "sec":/*SE VALOR FOR PO PARA DIAS NAUTICAS*/
-                    valortempo = tempo.value / 72910
-                    tempoResultado.value = valortempo.toFixed(6).toString();
+                case "sec":/*SE VALOR FOR DECADA PARA DIAS SECULO*/
+                    valortempo = tempo.value / 10
+                    tempoResultado.value = valortempo.toString();
                     break;
             }
             break;
         case "sec":
             switch (selecttempo2.value) {
-                case "miliseg":/*SE VALOR FOR DIAS NAUTICAS PARA MILISEGUNDO*/
-                    valortempo = tempo.value * 1.852
+                case "miliseg":/*SE VALOR FOR SECULO PARA MILISEGUNDO*/
+                    valortempo = tempo.value * 3.154e+12
+                    tempoResultado.value = valortempo.toExponential(4);
+                    break;
+                case "seg":/*SE VALOR FOR SECULO PARA SEGUNDO*/
+                    valortempo = tempo.value * 3.154e+9
+                    tempoResultado.value = valortempo.toExponential(4);
+                    break;
+                case "min":/*SE VALOR FOR SECULO PARA MINUTO*/
+                    valortempo = tempo.value * 5.256e+7
+                    tempoResultado.value = valortempo.toExponential(4);
+                    break;
+                case "hr":/*SE VALOR FOR SECULO PARA HORA*/
+                    valortempo = tempo.value * 876000
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "seg":/*SE VALOR FOR DIAS NAUTICAS PARA SEGUNDO*/
-                    valortempo = tempo.value * 1852
+                case "day":/*SE VALOR FOR SECULO PARA DIA*/
+                    valortempo = tempo.value * 36500
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "min":/*SE VALOR FOR DIAS NAUTICAS PARA MINUTO*/
-                    valor = tempo.value * 185200
-                    tempoResultado.value = valor.toString();
-                    break;
-                case "hr":/*SE VALOR FOR DIAS NAUTICAS PARA HORA*/
-                    valortempo = tempo.value * 1.852e+6
+                case "mes":/*SE VALOR FOR SECULO PARA MES*/
+                    valortempo = tempo.value * 1200
                     tempoResultado.value = valortempo.toString();
                     break;
-                case "day":/*SE VALOR FOR DIAS NAUTICAS PARA DIA*/
-                    valortempo = tempo.value * 1.151
-                    tempoResultado.value = valortempo.toString();
-                    break;
-                case "mes":/*SE VALOR FOR DIAS NAUTICAS PARA JARDAS*/
-                    valor = tempo.value * 2025
-                    tempoResultado.value = valor.toString();
-                    break;
-                case "ano":/*SE VALOR FOR DIAS NAUTICAS PARA PE*/
-                    valortempo = tempo.value * 6076
-                    tempoResultado.value = valortempo.toString();
-                    break;
-                case "dec":/*SE VALOR FOR DIAS NAUTICAS PARA POLEGADA*/
-                    valortempo = tempo.value * 72910
+                case "ano":/*SE VALOR FOR SECULO PARA DECADA*/
+                    valortempo = tempo.value * 100
                     tempoResultado.value = valortempo.toString()
                     break;
-                case "sec":/*SE VALOR FOR DIAS NAUTICAS PARA DIAS NAUTICAS*/
-                    tempoResultado.value = tempo.value.toString();
+                case "dec":/*SE VALOR FOR DECADA PARA SECULO*/
+                    valortempo = tempo.value * 10
+                    tempoResultado.value = valortempo.toString();
+                    break;
+                case "sec":/*SE VALOR FOR SECULO PARA DIAS SECULO*/
+                    tempoResultado.value = tempo.value.toString()
                     break;
             }
             break;

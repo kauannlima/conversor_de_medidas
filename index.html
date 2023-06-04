@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="main-header">
         <h1>Conversor de Medidas</h1>
         <p>Acesse os conversores abaixo para converter rapidamente Comprimento, Massa, Temperatura e Velocidade</p>
-<ul>
-    <li><a href="#article-temperatura">Temperatura</a></li>
-    <li><a href="#article-massa">Massa</a></li>
-    <li><a href="#article-comprimento">Comprimento</a></li>
-    <li><a href="#article-velocidade">Velocidade</a></li>
-    <li><a href="#article-tempo">Tempo</a></li>
-    <li><a href="#article-volume">Volume</a></li>
+        <ul>
+            <li><a href="#article-temperatura">Temperatura</a></li>
+            <li><a href="#article-massa">Massa</a></li>
+            <li><a href="#article-comprimento">Comprimento</a></li>
+            <li><a href="#article-velocidade">Velocidade</a></li>
+            <li><a href="#article-tempo">Tempo</a></li>
+            <li><a href="#article-volume">Volume</a></li>
 
-</ul>
+        </ul>
 
     </header>
-    <section class="main" >
-        <article class="article-type"id="article-comprimento">
+    <section class="main">
+        <article class="article-type" id="article-comprimento">
             <h3>Comprimento</h3>
             <label>
-                <input min="0" type="number" value="1"placeholder="Quero converter" id="comprimento">
+                <input min="0" type="number" value="1" placeholder="Quero converter" id="comprimento">
                 <select name="calc" id="selectComprimento1">
                     <option value="km">Quilômetro</option>
                     <option value="m">Metro</option>
@@ -54,12 +56,12 @@
                     <option value="po">Polegada</option>
                     <option value="mn">Milha náutica</option>
                 </select></label>
-                <button id="comprimentoLimpar">Limpar</button>
+            <button id="comprimentoLimpar">Limpar</button>
         </article>
-        <article class="article-type"id="article-massa">
+        <article class="article-type" id="article-massa">
             <h3>Massa</h3>
             <label>
-                <input min="0" type="number" value="1"placeholder="Quero converter" id="massa">
+                <input min="0" type="number" value="1" placeholder="Quero converter" id="massa">
                 <select name="calc" id="selectmassa1">
                     <option value="tm">Tonelada métrica</option>
                     <option value="q">Quilograma</option>
@@ -78,32 +80,32 @@
                     <option value="micro">Micrograma</option>
                     <option value="lr">Libra</option>
                 </select></label>
-           <button id="massaLimpar">Limpar</button>
+            <button id="massaLimpar">Limpar</button>
         </article>
 
-        <article class="article-type"id="article-temperatura">
+        <article class="article-type" id="article-temperatura">
             <h3>Temperatura</h3>
             <label>
-                <input min="0" type="number" value="1"placeholder="Quero converter" id="temperatura">
+                <input min="0" type="number" value="1" placeholder="Quero converter" id="temperatura">
                 <select name="calc" id="selecttemperatura1">
                     <option value="grac">Graus Celsius</option>
                     <option value="graf">Grau Fahrenheit</option>
                     <option value="kel">Kelvin</option>
                 </select></label>
             <label>
-                <input readonly type="number" placeholder="Para" id="temperaturaValor">
+                <input readonly type="number" placeholder="Para" id="tempraturaResultado">
                 <select name="calc" id="selecttemperatura2">
                     <option value="grac">Graus Celsius</option>
                     <option value="graf">Grau Fahrenheit</option>
                     <option value="kel">Kelvin</option>
                 </select></label>
-           <button id="temperaturaLimpar">Limpar</button>
+            <button id="temperaturaLimpar">Limpar</button>
         </article>
 
-        <article class="article-type"id="article-velocidade">
+        <article class="article-type" id="article-velocidade">
             <h3>Velocidade</h3>
             <label>
-                <input min="0" type="number" value="1"placeholder="Quero converter" id="velocidade">
+                <input min="0" type="number" value="1" placeholder="Quero converter" id="velocidade">
                 <select name="calc" id="selectvelocidade1">
                     <option value="mlh">Milha por hora</option>
                     <option value="ms">Metro por segundo</option>
@@ -121,7 +123,7 @@
             <button id="velocidadeLimpar">Limpar</button>
         </article>
 
-        <article class="article-type"id="article-tempo">
+        <article class="article-type" id="article-tempo">
             <h3>Tempo</h3>
             <label>
                 <input min="0" type="number" value="1" placeholder="Quero converter" id="tempo">
@@ -152,30 +154,29 @@
             <button id="tempoLimpar">Limpar</button>
         </article>
 
-        <article class="article-type"id="article-volume">
+        <article class="article-type" id="article-volume">
             <h3>Volume</h3>
             <label>
-                <input min="0" type="number"value="1" placeholder="Quero converter" id="volume">
+                <input min="0" type="number" value="1" placeholder="Quero converter" id="volume">
                 <select name="calc" id="selectvolume1">
-                    <option value="mlh">Milha por hora</option>
-                    <option value="ms">Metro por segundo</option>
-                    <option value="qh">Quilometro por hora</option>
-                    <option value="no">Nó</option>
+                    <option value="li">Litro</option>
+                    <option value="milili">Mililitro</option>
+                    <option value="mcubic">Metro cúbico</option>
                 </select></label>
             <label>
-                <input readonly type="number" placeholder="Para" id="volumeValor">
+                <input readonly type="number" placeholder="Para" id="volumeResultado">
                 <select name="calc" id="selectvolume2">
-                    <option value="mlh">Milha por hora</option>
-                    <option value="ms">Metro por segundo</option>
-                    <option value="qh">Quilometro por hora</option>
-                    <option value="no">Nó</option>
+                    <option value="li">Litro</option>
+                    <option value="milili">Mililitro</option>
+                    <option value="mcubic">Metro cúbico</option>
                 </select></label>
             <button id="volumeLimpar">Limpar</button>
         </article>
     </section>
 
     <footer class="footer">
-        <p>Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206">Kauan Lima</a></p>
+        <p>Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/kauan-de-almeida-lima-80a2b2206">Kauan
+                Lima</a></p>
     </footer>
 
     <script src="js/comprimento.js"></script>
@@ -183,6 +184,7 @@
     <script src="js/temperatura.js"></script>
     <script src="js/velocidade.js"></script>
     <script src="js/tempo.js"></script>
+    <script src="js/volume.js"></script>
 </body>
 
 </html>
