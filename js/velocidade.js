@@ -15,10 +15,11 @@ limparVelocidade.addEventListener("click", function(){
 } )
 
 function calculoMass() {
-    if (velocidade.value == "") {
+    let inputVelocidade = velocidade.value;
+    let parsedVelocidade = parseFloat(inputVelocidade);
+    if (isNaN(parsedVelocidade)) {
         alerta(velocidade)
-        clear(velocidade, velocidadeResultado);
-    }
+        clear(velocidade, velocidadeResultado);}
     else {
     switch (selectvelocidade1.value) {
         case "mlh":

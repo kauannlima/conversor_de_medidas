@@ -16,6 +16,12 @@ limparMassa.addEventListener("click", function(){
 
 
 function calculoMass() {
+  let inputMassa = massa.value;
+  let parsedMassa = parseFloat(inputMassa);
+  if (isNaN(parsedMassa)) {
+      alerta(massa)
+      clear(massa, massaResultado);}
+else {
   switch (selectmassa1.value) {
     case "tm":
       switch (selectmassa2.value) {
@@ -179,5 +185,5 @@ function calculoMass() {
           break;
       }
       break;
-  }
+  }}
 }

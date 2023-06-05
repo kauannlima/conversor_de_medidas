@@ -14,12 +14,12 @@ window.addEventListener("load", calculoVolume);
 limparVolume.addEventListener("click", function () {
     clear(volume, volumeResultado);
 })
-
-function calculoVolume() {
-    if (volume.value == "") {
-        alerta(volume)
-        clear(volume, volumeResultado);
-    }
+    function calculoVolume() {    
+        let inputVolume = volume.value;
+        let parsedVolume = parseFloat(inputVolume);
+        if (isNaN(parsedVolume)) {
+            alerta(volume)
+            clear(volume, volumeResultado);}
     else {
         switch (selectvolume1.value) {
             case "li":

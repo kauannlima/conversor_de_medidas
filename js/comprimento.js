@@ -17,10 +17,12 @@ limparComprimento.addEventListener("click", function(){
 } )
 
 function calculoCompri() {
-  if (comprimento.value == "") {
-    alerta()
-    clear(comprimento, comprimentoResultado);
-}else{
+  let inputComprimento = comprimento.value;
+  let parsedComprimento = parseFloat(inputComprimento);
+  if (isNaN(parsedComprimento)) {
+      alerta(comprimento)
+      clear(comprimento, comprimentoResultado);}
+else {
   switch (selectComprimento1.value) {
     case "km":
       switch (selectComprimento2.value) {

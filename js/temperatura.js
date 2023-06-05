@@ -17,10 +17,11 @@ limparTemperatura.addEventListener("click", function () {
 })
 
 function calculoTemp() {
-  if (temperatura.value == "") {
-    alerta(temperatura)
-    clear(temperatura, temperaturaResultado);
-  }
+  let inputTemperatura = temperatura.value;
+  let parsedTemperatura= parseFloat(inputTemperatura);
+  if (isNaN(parsedTemperatura)) {
+      alerta(temperatura)
+      clear(temperatura, tempraturaResultado);}
   else {
     switch (selecttemperatura1.value) {
       case "grac":
