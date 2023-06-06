@@ -14,59 +14,52 @@ window.addEventListener("load", calculoVolume);
 limparVolume.addEventListener("click", function () {
     clear(volume, volumeResultado);
 })
-    function calculoVolume() {    
-        let inputVolume = volume.value;
-        let parsedVolume = parseFloat(inputVolume);
-        if (isNaN(parsedVolume)) {
-            alerta(volume)
-            clear(volume, volumeResultado);}
-    else {
-        switch (selectvolume1.value) {
-            case "li":
-                switch (selectvolume2.value) {
-                    case "li":/*SE VALOR FOR LITRO PARA LITRO*/
-                        volumeResultado.value = volume.value.toString();
-                        break;
-                    case "milili":/*SE VALOR FOR LITRO PARA MILILITRO*/
-                        valorVolume = volume.value * 1000
-                        volumeResultado.value = valorVolume.toString();
-                        break;
-                    case "mcubic":/*SE VALOR FOR LITRO PARA METROS CUBICO*/
-                        valorVolume = volume.value / 1000
-                        volumeResultado.value = valorVolume.toString();
-                        break;
-                }
-                break;
-            case "milili":
-                switch (selectvolume2.value) {
-                    case "li":/*SE VALOR FOR MILILITRO PARA LITRO*/
-                        valorVolume = volume.value / 1000
-                        volumeResultado.value = valorVolume.toString();
-                        break;
-                    case "milili":/*SE VALOR FOR  MILILITRO PARA MILILITRO*/
-                        volumeResultado.value = volume.value.toString();
-                        break;
-                    case "mcubic":/*SE VALOR FOR MILILITRO PARA METROS CUBICO*/
-                        valorVolume = volume.value / 1e+6
-                        volumeResultado.value = valorVolume.toExponential(0);
-                        break;
-                }
-                break;
-            case "mcubic":
-                switch (selectvolume2.value) {
-                    case "li":/*SE VALOR FOR METROS CUBICO PARA  LITRO*/
-                        valorVolume = volume.value * 1000
-                        volumeResultado.value = valorVolume.toString();
-                        break;
-                    case "milili":/*SE VALOR FOR METROS CUBICO PARA  MILILITRO*/
-                        valorVolume = volume.value * 1e+6
-                        volumeResultado.value = valorVolume.toExponential(0);
-                        break;
-                    case "mcubic":/*SE VALOR FOR METROS CUBICO PARA METROS CUBICO*/
-                        volumeResultado.value = volume.value.toString();
-                        break;
-                }
-                break;
-        }
+function calculoVolume() {
+    switch (selectvolume1.value) {
+        case "li":
+            switch (selectvolume2.value) {
+                case "li":/*SE VALOR FOR LITRO PARA LITRO*/
+                    volumeResultado.value = volume.value.toString();
+                    break;
+                case "milili":/*SE VALOR FOR LITRO PARA MILILITRO*/
+                    valorVolume = volume.value * 1000
+                    volumeResultado.value = valorVolume.toString();
+                    break;
+                case "mcubic":/*SE VALOR FOR LITRO PARA METROS CUBICO*/
+                    valorVolume = volume.value / 1000
+                    volumeResultado.value = valorVolume.toString();
+                    break;
+            }
+            break;
+        case "milili":
+            switch (selectvolume2.value) {
+                case "li":/*SE VALOR FOR MILILITRO PARA LITRO*/
+                    valorVolume = volume.value / 1000
+                    volumeResultado.value = valorVolume.toString();
+                    break;
+                case "milili":/*SE VALOR FOR  MILILITRO PARA MILILITRO*/
+                    volumeResultado.value = volume.value.toString();
+                    break;
+                case "mcubic":/*SE VALOR FOR MILILITRO PARA METROS CUBICO*/
+                    valorVolume = volume.value / 1e+6
+                    volumeResultado.value = valorVolume.toExponential(0);
+                    break;
+            }
+            break;
+        case "mcubic":
+            switch (selectvolume2.value) {
+                case "li":/*SE VALOR FOR METROS CUBICO PARA  LITRO*/
+                    valorVolume = volume.value * 1000
+                    volumeResultado.value = valorVolume.toString();
+                    break;
+                case "milili":/*SE VALOR FOR METROS CUBICO PARA  MILILITRO*/
+                    valorVolume = volume.value * 1e+6
+                    volumeResultado.value = valorVolume.toExponential(0);
+                    break;
+                case "mcubic":/*SE VALOR FOR METROS CUBICO PARA METROS CUBICO*/
+                    volumeResultado.value = volume.value.toString();
+                    break;
+            }
+            break;
     }
 }

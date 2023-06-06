@@ -7,20 +7,15 @@ const limparVelocidade = document.querySelector("#velocidadeLimpar");
 
 selectvelocidade1.addEventListener("change", calculoMass);
 selectvelocidade2.addEventListener("change", calculoMass);
-velocidade.addEventListener("keyup", calculoMass);
+velocidade.addEventListener("keypress", calculoMass);
 window.addEventListener("load", calculoMass);
 
-limparVelocidade.addEventListener("click", function(){
+limparVelocidade.addEventListener("click", function () {
     clear(velocidade, velocidadeResultado);
-} )
+})
 
 function calculoMass() {
-    let inputVelocidade = velocidade.value;
-    let parsedVelocidade = parseFloat(inputVelocidade);
-    if (isNaN(parsedVelocidade)) {
-        alerta(velocidade)
-        clear(velocidade, velocidadeResultado);}
-    else {
+
     switch (selectvelocidade1.value) {
         case "mlh":
             switch (selectvelocidade2.value) {
@@ -98,5 +93,5 @@ function calculoMass() {
                     break;
             }
             break;
-    }}
+    }
 }

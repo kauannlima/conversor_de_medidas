@@ -1,28 +1,20 @@
-let comprimento = document.querySelector("#comprimento");
+let comprimento = document.querySelector("#comprimento")
 let comprimentoResultado = document.querySelector("#comprimentoResultado");
 let selectComprimento1 = document.querySelector("#selectComprimento1");
 let selectComprimento2 = document.querySelector("#selectComprimento2");
 let valorComprimento;
 const limparComprimento = document.querySelector("#comprimentoLimpar");
 
-selectComprimento1.addEventListener("change", calculoCompri);
+comprimento.addEventListener("keypress", calculoCompri);
 selectComprimento2.addEventListener("change", calculoCompri);
-comprimento.addEventListener("change", calculoCompri);
-comprimento.addEventListener("keyup", calculoCompri);
+selectComprimento2.addEventListener("change", calculoCompri);
 window.addEventListener("load", calculoCompri);
-
 
 limparComprimento.addEventListener("click", function(){
   clear(comprimento, comprimentoResultado);
 } )
 
 function calculoCompri() {
-  let inputComprimento = comprimento.value;
-  let parsedComprimento = parseFloat(inputComprimento);
-  if (isNaN(parsedComprimento)) {
-      alerta(comprimento)
-      clear(comprimento, comprimentoResultado);}
-else {
   switch (selectComprimento1.value) {
     case "km":
       switch (selectComprimento2.value) {
@@ -171,7 +163,7 @@ else {
           comprimentoResultado.value = valorComprimento.toFixed(6).toString();
           break;
         case "po":/*SE VALOR FOR MELIMETRO PARA POLEGADA*/
-          valor = comprimento.value / 25.4
+        valorComprimento = comprimento.value / 25.4
           comprimentoResultado.value = valorComprimento.toFixed(6).toString()
           break;
         case "mn":/*SE VALOR FOR MELIMETRO PARA MILHAS NAUTICAS*/
@@ -376,5 +368,4 @@ else {
       }
       break;
   }}
-}
 
