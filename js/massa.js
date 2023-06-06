@@ -7,7 +7,7 @@ const limparMassa = document.querySelector("#massaLimpar");
 
 selectmassa1.addEventListener("change", calculoMass);
 selectmassa2.addEventListener("change", calculoMass);
-massa.addEventListener("keypress", calculoMass);
+massa.addEventListener("keyup", calculoMass);
 window.addEventListener("load", calculoMass);
 
 limparMassa.addEventListener("click", function () {

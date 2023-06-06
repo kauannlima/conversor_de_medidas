@@ -7,7 +7,7 @@ const limparTempo = document.querySelector("#tempoLimpar");
 
 selecttempo1.addEventListener("change", calculoTempo);
 selecttempo2.addEventListener("change", calculoTempo);
-tempo.addEventListener("keypress", calculoTempo);
+tempo.addEventListener("keyup", calculoTempo);
 window.addEventListener("load", calculoTempo);
 
 

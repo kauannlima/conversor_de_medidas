@@ -5,7 +5,7 @@ let selectComprimento2 = document.querySelector("#selectComprimento2");
 let valorComprimento;
 const limparComprimento = document.querySelector("#comprimentoLimpar");
 
-comprimento.addEventListener("keypress", calculoCompri);
+comprimento.addEventListener("keyup", calculoCompri);
 selectComprimento2.addEventListener("change", calculoCompri);
 selectComprimento2.addEventListener("change", calculoCompri);
 window.addEventListener("load", calculoCompri);

@@ -7,7 +7,7 @@ const limparVelocidade = document.querySelector("#velocidadeLimpar");
 
 selectvelocidade1.addEventListener("change", calculoMass);
 selectvelocidade2.addEventListener("change", calculoMass);
-velocidade.addEventListener("keypress", calculoMass);
+velocidade.addEventListener("keyup", calculoMass);
 window.addEventListener("load", calculoMass);
 
 limparVelocidade.addEventListener("click", function () {

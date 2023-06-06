@@ -8,7 +8,7 @@ const limparTemperatura = document.querySelector("#temperaturaLimpar");
 
 selecttemperatura1.addEventListener("change", calculoTemp);
 selecttemperatura2.addEventListener("change", calculoTemp);
-temperatura.addEventListener("keypress", calculoTemp);
+temperatura.addEventListener("keyup", calculoTemp);
 window.addEventListener("load", calculoTemp);
 
 
